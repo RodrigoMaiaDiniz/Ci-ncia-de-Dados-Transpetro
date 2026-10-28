@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes laser-scan {
+  0% {
+    top: 2%;
+    opacity: 0.85;
+  }
+  50% {
+    top: 94%;
+    opacity: 1;
+  }
+  100% {
+    top: 2%;
+    opacity: 0.85;
+  }
+}
+
+@keyframes grid-pulse {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.45; }
+}
+
+@keyframes hud-bracket-pulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 2px #06b6d4); }
+  50% { transform: scale(1.04); filter: drop-shadow(0 0 8px #10b981); }
+}
+
+@keyframes code-glow {
+  0%, 100% { box-shadow: 0 0 15px rgba(16, 185, 129, 0.15); }
+  50% { box-shadow: 0 0 25px rgba(6, 182, 212, 0.25); }
+}
+
+.animate-laser-scan {
+  animation: laser-scan 2.4s ease-in-out infinite;
+}
+
+.animate-grid-pulse {
+  animation: grid-pulse 2.2s ease-in-out infinite;
+}
+
+.animate-hud-bracket {
+  animation: hud-bracket-pulse 2s ease-in-out infinite;
+}
+
+.code-highlight-glow {
+  animation: code-glow 3s ease-in-out infinite;
+}

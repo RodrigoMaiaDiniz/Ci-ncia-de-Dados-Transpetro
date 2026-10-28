@@ -1,0 +1,6 @@
+{
+  "name": "Transpetro Data Science AI Agent",
+  "description": "Agente preparatório completo para o Concurso Transpetro - Nível Superior em Ciência de Dados (Banca Cesgranrio). Inclui simulador de provas, tutor inteligente, gerador de cadernos e apostilas em PDF com teoria e gabaritos comentados, e histórico permanente de estudos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
